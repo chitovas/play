@@ -1,0 +1,10 @@
+name: main pipeline
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build: 
+    uses: chitovas/.github/workflows/build.yml@d68289a48bc236808f05658ca1b77bbf19b7e314
+    with: 
+      dotnet-version: '9.0'
