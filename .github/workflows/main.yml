@@ -16,5 +16,14 @@ jobs:
           echo "DIRECT VARIABLE: ${{ vars.ORG_CHITOVA_VARIABLE }} - $ORG_CHITOVA_VARIABLE"
           echo "STORED VARIABLE: ${{ env.ORG_CHITOVA_VARIABLE }} - $ORG_CHITOVA_VARIABLE"
           echo "STORED SECRET: ${{ env.SECRET }} ---  $SECRET"
+  issue: 
+    runs-on: ubuntu-latest
+    steps:
+    - name: Create issue
+      run: |
+        gh issue create --title "Bug" --body "Description of my issue"
+      env:
+        GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          
          
   
