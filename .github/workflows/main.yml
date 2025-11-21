@@ -16,9 +16,9 @@ jobs:
           ORG_CHITOVA_VARIABLE: ${{ vars.ORG_CHITOVA_VARIABLE }}
           SECRET: ${{ secrets.ORG_CHITOVA_SECRET }}
         run: |
-          echo "DIRECT VARIABLE: ${{ vars.ORG_CHITOVA_VARIABLE }}"
+          echo "DIRECT VARIABLE: ${{ vars.ORG_CHITOVA_VARIABLE }} --- $ORG_CHITOVA_VARIABLE"
           echo "STORED VARIABLE: ${{ env.ORG_CHITOVA_VARIABLE }} - $ORG_CHITOVA_VARIABLE"
-          echo "STORED SECRET: ${{ env.SECRET }}"
+          echo "STORED SECRET: ${{ env.SECRET }} --- $ORG_CHITOVA_SECRET ---  $SECRET"
           echo "STORED SECRET: ${{ vars.REPO_CHITOVA_VARIABLE }}"
          
   
