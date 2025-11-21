@@ -12,6 +12,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: print 
+        env: 
+          ORG_CHITOVA_VARIABLE: ${{ vars.ORG_CHITOVA_VARIABLE }}
         run: |
-          echo "VARIABLE: ${{ env.ORG_CHITOVA_VARIABLE }}"
-          
+          echo "DIRECT VARIABLE: ${{ vars.ORG_CHITOVA_VARIABLE }}"
+          echo "STORED VARIABLE: ${{ env.ORG_CHITOVA_VARIABLE }}"
+  
