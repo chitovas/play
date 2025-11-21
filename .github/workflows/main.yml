@@ -17,7 +17,7 @@ jobs:
           echo "$ORG_CHITOVA_VARIABLE"
           echo "vars.REPO_CHITOVA_VARIABLE: ${{ vars.REPO_CHITOVA_VARIABLE }}"
           echo "$REPO_CHITOVA_VARIABLE"
-          echo "env.ORG_CHITOVA_SECRET: ${{ secrets.ORG_CHITOVA_SECRET }}"
+          echo "secrets.ORG_CHITOVA_SECRET: ${{ secrets.ORG_CHITOVA_SECRET }}"
           echo "$ORG_CHITOVA_SECRET"
          
   
