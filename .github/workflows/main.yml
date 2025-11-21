@@ -14,8 +14,10 @@ jobs:
       - name: print 
         run: |
           echo "vars.ORG_CHITOVA_VARIABLE: ${{ vars.ORG_CHITOVA_VARIABLE }}"
-          echo "ORG_CHITOVA_VARIABLE: $ORG_CHITOVA_VARIABLE"
+          echo "$ORG_CHITOVA_VARIABLE"
+          echo "vars.REPO_CHITOVA_VARIABLE: ${{ vars.REPO_CHITOVA_VARIABLE }}"
+          echo "$REPO_CHITOVA_VARIABLE"
           echo "env.SECRET: ${{ env.SECRET }}"
-          echo "SECRET: $SECRET"
+          echo "$SECRET"
          
   
