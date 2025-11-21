@@ -8,3 +8,10 @@ jobs:
     uses: chitovas/.github/.github/workflows/build.yml@d68289a48bc236808f05658ca1b77bbf19b7e314
     with: 
       dotnet-version: '9.0'
+  logging:
+    runs-on: ubuntu-latest
+    steps:
+      - name: print 
+        run: |
+          echo "VARIABLE: ${{ env.ORG_CHITOVA_VARIABLE }}"
+          
